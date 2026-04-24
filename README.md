@@ -15,6 +15,11 @@
 |03.|CSS        |workflow - look & feel - cascading style sheet|
 |04.|JavaScript |behavlor - programing lenguage                |
 
+---
+
+![profile](/src/imgs/asi.jpeg)
+***sarha ramirez***
+
 [ADSO Files](https://tinyurl.com/wnkk334u)
 
 [VERCEL URL](https://vervel.app)
