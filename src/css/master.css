@@ -1,0 +1,114 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+background-color: #2E1FFF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='64.3' stroke-opacity='0.05' %3E%3Ccircle fill='%232E1FFF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%235109ea' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%236200d6' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%236c00c2' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%237100af' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2373009d' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2372008c' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%2370007c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%236c006d' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2367005f' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23600052' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23590046' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2351003b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23490031' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23400028' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23360120' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232d0419' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23240413' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;   
+    background-position: center;
+    color:#fffc;
+    font-family: Poppins;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    /* Main */
+    main {
+        padding: 1rem;
+        width: 380px;
+        header.mainmenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                font-weight: 800;
+                border-bottom: 2px solid #fffc;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-weight: 500;
+                margin: 0;
+            }
+            h4 {
+                font-weight: 300;
+                font-size: 0.8rem;
+                margin: 0;
+            }
+            img {
+                border: 6px solid #fffc;
+                border-radius: 50%;
+                height: 280px;
+                object-fit: cover;
+                width: 280px;
+            }
+        }
+        menu.mainmenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.6rem;
+            a:is(:link, :visited) {
+                background-color: #fff9;
+                border-radius: 8rem;
+                color: #0009;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 0.6rem;
+                text-decoration: none;
+                padding: 0.4rem;
+                transition: all 0.4s ease-in;
+                width: 300px;
+                span {
+                    background-color: #f10554;
+                    color: #fffc;
+                    font-size: 1.6rem;
+                    border-radius: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 70px;
+                    width: 70px;
+                }
+                aside {
+                    width: 200px;
+                    h4 {
+                        font-size: 1.2rem;
+                        font-weight: 800;
+                        margin: 0;
+                    }
+                    small {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+            a:is(:hover) {
+                transform: scale(1.05) translateX(10px);
+                background-color: #f10554;
+                color: #fff9;
+                span {
+                    background-color: #fff9;
+                    color: #0009;
+                }
+            }
+        }
+    }
+}
