@@ -22,11 +22,244 @@
             <h4>Example:</h4>
             <p>ul>li>a</p>
             <h4>Result:</h4>
-<xmp>
-<ul>
-    <li><a href=""></a></li>
-</ul>
-</xmp>
+    <xmp>
+    <ul>
+        <li><a href=""></a></li>
+    </ul>
+    </xmp>
+        </section>
+        <section>
+            <h2>02-sibling<em> + </em></h2>
+            <p>create a next sibling element ay the same level.</p>
+            <h4>Example:</h4>
+            <p>div+p</p>
+            <h4>Result:</h4>
+    <xmp>
+    <div></div>
+    <p></p>
+    </xmp>
+        </section>
+        <section>
+            <h2>03-multiplicación<em style="padding-top: 1.4rem;"> * </em></h2>
+            <p>repeats an element or group of elemtens multiple times.</p>
+            <h4>Example:</h4>
+            <p>ul>li*5</p>
+            <h4>Result:</h4>
+    <xmp>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </xmp>
+        </section>
+        <section>
+            <h2>04-class<em style="padding-bottom: 1.4rem;"> . </em></h2>
+            <p>Creates a class attribute.</p>
+            <h4>Example:</h4>
+            <p>h2.title</p>
+            <h4>Result:</h4>
+    <xmp>
+    <h2 class="title">hola</h2>
+    <p class="title">hello</p>
+    </xmp>
+        </section>
+        <section>
+            <h2>05-Classes<em style="padding-bottom: 1rem; font-size: 2rem;"> ... </em></h2>
+            <p>Creates multiple class attributes. </p>
+            <h4>Example:</h4>top
+            <p>div.clase1.clase2.clasen</p>
+            <h4>Result:</h4>
+    <xmp>
+    <div class="clase1 clase2 clasen"></div>
+    </xmp>
+        </section>
+        <section>
+            <h2>06-Id<em style="font-size: 1.4rem;"> # </em></h2>
+            <p>Creates an ID attribute.</p>
+            <h4>Example:</h4>
+            <p>nav#menu</p>
+            <h4>Result:</h4>
+    <xmp>
+    <nav id="menu"></nav>
+    </xmp>
+        </section>
+        <section>
+            <h2>07-Text<em style="font-size: 1.4rem;"> {} </em></h2>
+            <p>Inserts text content. </p>
+            <h4>Example:</h4>
+            <p>buttom{click me}</p>
+            <h4>Result:</h4>
+    <xmp>
+    <button>click me</button>
+    </xmp>
+        </section>
+        <section>
+            <h2>08-Custom Attribute<em style="font-size: 1.4rem;"> [] </em></h2>
+            <p>Creates custom attributes. </p>
+            <h4>Example:</h4>
+            <p>a[href=www.google.com]</p>
+            <h4>Result:</h4>
+    <xmp>
+    <a href="www.google.com"></a>
+    </xmp>
+        </section>
+        <section>
+            <h2>09-Item Numbering<em style="font-size: 2rem;"> $ </em></h2>
+            <p>Adds consecutive numbers.</p>
+            <h4>Example:</h4>
+            <p>ul>li.num$*3</p>
+            <h4>Result:</h4>
+    <xmp>
+    <ul>
+        <li class="num1"></li>
+        <li class="num2"></li>
+        <li class="num3"></li>
+    </ul>
+    </xmp>
+        </section>
+        <section>
+            <h2>10-Reverse Numbering<em style="font-size: 1.2rem;"> @- </em></h2>
+            <p>Inverts numbering order.</p>
+            <h4>Example:</h4>
+            <p>ul>li.num$@-*3</p>
+            <h4>Result:</h4>
+    <xmp>
+    <ul>
+        <li class="num3"></li>
+        <li class="num2"></li>
+        <li class="num1"></li>
+    </ul>
+    </xmp>
+        </section>
+        <section>
+            <h2>11-Base Numbering<em style="font-size: 1.2rem;"> @n </em></h2>
+            <p>Defines a base number for sequences.</p>
+            <h4>Example:</h4>
+            <p>ul>li.num$@3*4</p>
+            <h4>Result:</h4>
+    <xmp>
+    <ul>
+        <li class="num3"></li>
+        <li class="num4"></li>
+        <li class="num5"></li>
+        <li class="num6"></li>
+    </ul>
+    </xmp>
+        </section>
+        <section>
+            <h2>12-Climb Up<em style="font-size: 1.6rem;"> ^ </em></h2>
+            <p>Moves up one level.</p>
+            <h4>Example:</h4>
+            <p>section>article>div^p</p>
+            <h4>Result:</h4>
+    <xmp>
+    <section>
+        <article>
+            <div></div>
+        </article>
+        <p></p>
+    </section>
+    </xmp>
+        </section>
+        <section>
+            <h2>13-Grouping<em style="font-size: 1.4rem;"> ( ) </em></h2>
+            <p>Groups elements together.</p>
+            <h4>Example:</h4>
+            <p>(header>nav)(section>article)</p>
+            <h4>Result:</h4>
+    <xmp>
+    <header>
+        <nav></nav>
+    </header>
+    <section>
+        <article></article>
+    </section>
+    </xmp>
+        </section>
+        <section>
+            <h2>14-Lorem<em style="font-size: 0.7rem;"> lorem </em></h2>
+            <p>Generates placeholder text.</p>
+            <h4>Example:</h4>
+            <p>lorem*5</p>
+            <h4>Result:</h4>
+    <xmp>
+    lorem*5
+    </xmp>
+        </section>
+        <section>
+            <h2>15-HTML Documents<em style="font-size: 2rem;">  ! </em></h2>
+            <p>Creates various HTML document types.</p>
+            <h4>Example:</h4>
+            <p>!</p>
+            <h4>Result:</h4>
+    <xmp>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        </head>
+    <body
+    
+    </body
+    </html>
+    </xmp>
+        </section>
+        <section id="section16">
+            <h2>16-Meta Tags<em style="font-size: 0.7rem;"> meta: </em></h2>
+            <p>Generates meta tags.</p>
+            <h4>Example:</h4>
+            <p>meta:vp</p>
+            <h4>Result:</h4>
+    <xmp>
+    <meta name="viewport" 
+    content="width=device-width,
+    initial-scale=1.0">
+    </xmp>
+        </section>
+        <section id="section17">
+        <h2>17-challenge emmet</h2>
+        <h4>Example</h4>
+        <p>header#header>nav.navbar.navbar-inverse>div.container>div.navbar-header>(button.navbar-toggle[type=button]>span.sr-only{Toggle navigation}+span.icon-bar+span.icon-bar+span.icon-bar)+a.navbar-brand[href=index.php]>img[src=imgs/logo.png alt=""]+div.collapse>ul.nav.navbar-nav>li>a.link[href=index.html]{Inicio}+li.active.link>a[href=login.html]{Ingresar}+li>a.link[href=registro.html]{Registrarse}+li>a.link[href=contacto.html]{Contacto}</p>
+        <xmp id="xmp17">
+        <header id="header">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-togger">
+                            <span class="sr-only">toggle navigation</span>
+                            <span class="iconbar"></span>
+                            <span class="iconbar"></span>
+                            <span class="iconbar"></span>
+                        </button>
+                        <a href="index.php" class="navbar-brand">
+                            <img src="imgs/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html" class="link">inicio</a>
+                            </li>
+                            <li>
+                                <a href="login.html">ingresar</a>
+                            </li>
+                            <li>
+                                <a href="registro.html" class="link">registrarse</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html" class="link">contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </xmp>
+    </section>
     </main>
     
 </body>
