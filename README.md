@@ -22,4 +22,4 @@
 
 [ADSO Files](https://tinyurl.com/wnkk334u)
 
-[VERCEL URL](https://vervel.app)
+[VERCEL URL](https://adso3390374-opal.vercel.app/)
