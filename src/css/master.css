@@ -36,6 +36,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
     }
+    &.css{
+background-color: #230026;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='200' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='' style='transform-origin:center'%3E%3Cg transform='rotate(-148.8 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%2327002B' href='%23a' transform='rotate(-55.8 0 0) scale(0.442)'/%3E%3Cuse stroke='%232c0232' href='%23a' transform='rotate(-46.5 0 0) scale(0.535)'/%3E%3Cuse stroke='%2332033a' href='%23a' transform='rotate(-37.2 0 0) scale(0.628)'/%3E%3Cuse stroke='%23370541' href='%23a' transform='rotate(-27.9 0 0) scale(0.721)'/%3E%3Cuse stroke='%233c0649' href='%23a' transform='rotate(-18.6 0 0) scale(0.814)'/%3E%3Cuse stroke='%23420952' href='%23a' transform='rotate(-9.3 0 0) scale(0.907)'/%3E%3Cuse stroke='%23470b5a' href='%23a' transform=''/%3E%3Cuse stroke='%234c0e63' href='%23a' transform='rotate(9.3 0 0) scale(1.093)'/%3E%3Cuse stroke='%2351116c' href='%23a' transform='rotate(18.6 0 0) scale(1.186)'/%3E%3Cuse stroke='%23561475' href='%23a' transform='rotate(27.9 0 0) scale(1.279)'/%3E%3Cuse stroke='%235a187e' href='%23a' transform='rotate(37.2 0 0) scale(1.372)'/%3E%3Cuse stroke='%235f1b88' href='%23a' transform='rotate(46.5 0 0) scale(1.465)'/%3E%3Cuse stroke='%23631f92' href='%23a' transform='rotate(55.8 0 0) scale(1.558)'/%3E%3Cuse stroke='%2367239c' href='%23a' transform='rotate(65.1 0 0) scale(1.651)'/%3E%3Cuse stroke='%236b27a6' href='%23a' transform='rotate(74.4 0 0) scale(1.744)'/%3E%3Cuse stroke='%236e2bb1' href='%23a' transform='rotate(83.7 0 0) scale(1.837)'/%3E%3Cuse stroke='%237230bb' href='%23a' transform='rotate(93 0 0) scale(1.93)'/%3E%3Cuse stroke='%237534c6' href='%23a' transform='rotate(102.3 0 0) scale(2.023)'/%3E%3Cuse stroke='%237738d1' href='%23a' transform='rotate(111.6 0 0) scale(2.116)'/%3E%3Cuse stroke='%237a3ddc' href='%23a' transform='rotate(120.9 0 0) scale(2.209)'/%3E%3Cuse stroke='%237c42e8' href='%23a' transform='rotate(130.2 0 0) scale(2.302)'/%3E%3Cuse stroke='%237d47f3' href='%23a' transform='rotate(139.5 0 0) scale(2.395)'/%3E%3Cuse stroke='%237E4CFF' href='%23a' transform='rotate(148.8 0 0) scale(2.488)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+background-attachment: fixed;
+background-size: cover;
+    }
     /* button home */
     a:is(:link, :visited) {
     &.btn-home {
@@ -100,7 +108,7 @@ background-size: cover;
             flex-direction: column;
             gap: 0.6rem;
 
-            &.submenu {
+            &.submenu-html {
         a:is(:link, :visited) {
             span {
             background-color: #ee6429;
@@ -122,6 +130,30 @@ background-size: cover;
             }
         }
         }
+
+        &.submenu-css {
+        a:is(:link, :visited) {
+            span {
+            background-color: #663399;
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            }
+            aside {
+            h4 {
+                font-weight: normal;
+                font-size: 1rem;
+            }
+            }
+        }
+        a:is(:hover) {
+            background-color: #663399;
+            span {
+            background-color: #fff9;
+            }
+        }
+        }
+
             a:is(:link, :visited) {
                 background-color: #fff9;
                 border-radius: 8rem;
