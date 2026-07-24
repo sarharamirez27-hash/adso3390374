@@ -1,0 +1,22 @@
+div.flag{
+            background: radial-gradient(circle, red 25%, white 25%);
+            height: 170px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            margin: 2rem auto;
+        }
+
+div.flag-arg{
+            background: linear-gradient(to right, black 30%, yellow 30% 70%, red 70%) ;
+            color: black;
+            height: 170px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            margin: 2rem auto;
+        }
