@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-Specificity</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        button.bg-blue {
+            background-color: dodgerblue;
+            color: white;
+            cursor: pointer;
+            border-radius: 1rem;
+            border: 4px solid #fff;
+            padding: 1rem 4rem;
+            display: flex;
+            margin: 4rem auto;
+        }
+        .bg-blue{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+    </a>
+        <main>
+        <header class="mainmenu">
+            <h1>06-Specificity</h1>
+            <h4>Is score/rank that determines which style declaration is ultimately applied to an element.</h4>
+        </header>
+        <section>
+            <h4>Try to change button bg color</h4>
+            <button class="bg-blue">Click Me</button>
+        </section>
+    </main>
+</body>
+</html>
