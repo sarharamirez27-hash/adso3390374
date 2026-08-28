@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-position</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        .box {
+            background-color: #1e1e1e;
+            border: 2px solid #fff9;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            min-height: 180px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caja {
+            background-color: #4caf50;
+            padding: 1rem 2rem;
+            border: 2px solid #fff;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 6px;
+            min-width: 80px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+
+        .box-relative .caja2 {
+            position: relative;
+            top: 5px;    
+            left: 40px;   
+            background-color: #2196f3; 
+        }
+
+        .box-absolute {
+            position: relative;
+        }
+
+        .box-fixed .caja-fixed {
+            position: fixed;
+            bottom: 100px;
+            background-color: #e91e63;
+            z-index: 999;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        .box-sticky {
+            height: 350px;
+            overflow-y: auto;
+            display: block; 
+            padding: 0;
+            position: relative;
+        }
+        .box-sticky .contenido-scroll {
+            padding: 1rem;
+        }
+        .box-sticky .caja-sticky {
+            position: sticky;
+            top: 0;
+            background-color: #9c27b0;
+            margin: 0;
+            border-radius: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .box-sticky .texto-largo {
+            color: #ccc;
+            padding: 1rem;
+            line-height: 2;
+            height: 500px;
+            background: repeating-linear-gradient(45deg, #2a2a2a 0px, #2a2a2a 20px, #333 20px, #333 40px);
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256">
+            <path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"/>
+        </svg>
+    </a>
+
+    <main>
+        <header class="mainmenu">
+            <h1>15 - Position</h1>
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </header>
+
+        <section>
+            <h4>Static</h4>
+            <div class="box box-static">
+                <div class="caja">Caja 1</div>
+                <div class="caja">Caja 2</div>
+                <div class="caja">Caja 3</div>
+                <div class="caja">Caja 4</div>
+            </div>
+
+            <h4>Relative</h4>
+            <div class="box box-relative">
+                <div class="caja caja1">Caja 1</div>
+                <div class="caja caja2">Caja 2</div>
+                <div class="caja caja3">Caja 3</div>
+                <div class="caja caja4">Caja 4</div>
+            </div>
+
+            <h4>Absolute</h4>
+            <div class="box box-absolute">
+                <div class="caja caja1">Caja 1</div>
+                <div class="caja caja3">Caja 3</div>
+                <div class="caja caja4">Caja 4</div>
+            </div>
+
+            <h4>Fixed </h4>
+            <div class="box box-fixed">
+                <div class="caja caja-fixed">Fixed</div>
+            </div>
+
+            <h4>Sticky </h4>
+            <div class="box box-sticky">
+                <div class="contenido-scroll">
+                    <div class="caja caja-sticky">sticky</div>
+                    <div class="texto-largo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem necessitatibus nemo in, incidunt ut quia possimus laborum qui reiciendis maxime exercitationem earum modi repellendus similique illo culpa sequi. Cupiditate?</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

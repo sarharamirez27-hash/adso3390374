@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 - Typography</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        /* ===== Estilos generales ===== */
+        .demo-box {
+            background-color: #1e1e1e;
+            border: 2px solid #fff9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .demo-box h4 {
+            color: #fffc;
+            margin-top: 0;
+            border-bottom: 1px solid #fff3;
+            padding-bottom: 0.4rem;
+        }
+
+        .demo-box code {
+            background-color: #333;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: #fffc;
+            font-size: 0.9rem;
+        }
+
+        .demo-box p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        /* ===== EJEMPLOS DE TYPOGRAPHY ===== */
+
+        /* 1. COLOR */
+        .ejemplo-color .rojo    { color: #ff6b6b; }
+        .ejemplo-color .verde   { color: #51cf66; }
+        .ejemplo-color .azul    { color: #4dabf7; }
+        .ejemplo-color .amarillo{ color: #fcc419; }
+        .ejemplo-color .morado  { color: #cc5de8; }
+        .ejemplo-color .naranja { color: #ff922b; }
+
+        /* 2. FAMILY */
+        .ejemplo-family .serif      { font-family: 'Times New Roman', Times, serif; }
+        .ejemplo-family .sans-serif { font-family: Arial, Helvetica, sans-serif; }
+        .ejemplo-family .monospace  { font-family: 'Courier New', Courier, monospace; }
+        .ejemplo-family .cursive    { font-family: 'Brush Script MT', cursive; }
+        .ejemplo-family .fantasy    { font-family: 'Papyrus', fantasy; }
+
+        /* 3. SIZE */
+        .ejemplo-size .pequeno  { font-size: 0.75rem; }
+        .ejemplo-size .normal   { font-size: 1rem; }
+        .ejemplo-size .mediano  { font-size: 1.5rem; }
+        .ejemplo-size .grande   { font-size: 2.5rem; }
+        .ejemplo-size .enorme   { font-size: 4rem; }
+
+        /* 4. WEIGHT */
+        .ejemplo-weight .thin   { font-weight: 100; }
+        .ejemplo-weight .light  { font-weight: 300; }
+        .ejemplo-weight .normal { font-weight: 400; }
+        .ejemplo-weight .bold   { font-weight: 700; }
+        .ejemplo-weight .black  { font-weight: 900; }
+
+        /* También podemos usar nombres */
+        .ejemplo-weight .lighter { font-weight: lighter; }
+        .ejemplo-weight .bolder  { font-weight: bolder; }
+
+        /* ===== Combinación en un párrafo ===== */
+        .combinado {
+            font-family: 'Georgia', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffd43b;
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256">
+            <path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"/>
+        </svg>
+    </a>
+
+    <main>
+        <header class="mainmenu">
+            <h1>18 - Typography</h1>
+            <ul>
+                <li>Color</li>
+                <li>Family</li>
+                <li>Size</li>
+                <li>Weight</li>
+            </ul>
+        </header>
+
+        <section>
+            <h3>Color</h3>
+            <div class="demo-box ejemplo-color">
+                <p class="rojo">Texto en rojo (<code>color: #ff6b6b;</code>)</p>
+                <p class="verde">Texto en verde (<code>color: #51cf66;</code>)</p>
+                <p class="azul">Texto en azul (<code>color: #4dabf7;</code>)</p>
+                <p class="amarillo">Texto en amarillo (<code>color: #fcc419;</code>)</p>
+                <p class="morado">Texto en morado (<code>color: #cc5de8;</code>)</p>
+                <p class="naranja">Texto en naranja (<code>color: #ff922b;</code>)</p>
+            </div>
+
+            <h3>Family</h3>
+            <div class="demo-box ejemplo-family">
+                <p class="serif"><strong>Serif</strong> – Times New Roman, Georgia, etc.</p>
+                <p class="sans-serif"><strong>Sans-serif</strong> – Arial, Helvetica, etc.</p>
+                <p class="monospace"><strong>Monospace</strong> – Courier New, Consolas, etc.</p>
+                <p class="cursive"><strong>Cursive</strong> – Brush Script MT, etc.</p>
+                <p class="fantasy"><strong>Fantasy</strong> – Papyrus, Impact, etc.</p>
+            </div>
+
+            <h3>Size</h3>
+            <div class="demo-box ejemplo-size">
+                <p class="pequeno">Tamaño pequeño</p>
+                <p class="normal">Tamaño normal</p>
+                <p class="mediano">Tamaño mediano</p>
+                <p class="grande">Tamaño grande</p>
+                <p class="enorme">Tamaño enorme</p>
+            </div>
+
+            <h3>Weight</h3>
+            <div class="demo-box ejemplo-weight">
+                <p class="thin">Thin (100) – muy delgado</p>
+                <p class="light">Light (300) – ligero</p>
+                <p class="normal">Normal (400) – normal</p>
+                <p class="bold">Bold (700) – negrita</p>
+                <p class="black">Black (900) – muy negrita</p>
+                <p class="lighter">Lighter (más ligero que el padre)</p>
+                <p class="bolder">Bolder (más grueso que el padre)</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

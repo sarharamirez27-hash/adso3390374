@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 - Text</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        /* ===== Mismo estilo que 15-position ===== */
+        .box {
+            background-color: #1e1e1e;
+            border: 2px solid #fff9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .box h4 {
+            color: #fffc;
+            margin-top: 0;
+            border-bottom: 1px solid #fff3;
+            padding-bottom: 0.4rem;
+        }
+
+        .box p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .box code {
+            background-color: #333;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: #fffc;
+            font-size: 0.9rem;
+        }
+
+        .box .tag {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 0.1rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            color: #999;
+            border: 1px solid #3a3a3a;
+        }
+
+        /* ===== Ejemplos ===== */
+        .align-left   { text-align: left; }
+        .align-center { text-align: center; }
+        .align-right  { text-align: right; }
+        .align-justify{ text-align: justify; }
+
+        .lh-compact   { line-height: 1.2; }
+        .lh-normal    { line-height: 1.5; }
+        .lh-relaxed   { line-height: 2; }
+        .lh-loose     { line-height: 2.8; }
+
+        .dec-none         { text-decoration: none; }
+        .dec-underline    { text-decoration: underline; }
+        .dec-overline     { text-decoration: overline; }
+        .dec-line-through { text-decoration: line-through; }
+        .dec-underline-wavy { text-decoration: underline wavy #fcc419; }
+        .dec-overline-dashed { text-decoration: overline dashed #ff922b; }
+
+        .trans-uppercase { text-transform: uppercase; }
+        .trans-lowercase { text-transform: lowercase; }
+        .trans-capitalize{ text-transform: capitalize; }
+        .trans-none      { text-transform: none; }
+
+        .indent-small  { text-indent: 1.5rem; }
+        .indent-medium { text-indent: 3rem; }
+        .indent-large  { text-indent: 6rem; }
+
+        .word-normal  { word-spacing: normal; }
+        .word-wide    { word-spacing: 0.5rem; }
+        .word-wider   { word-spacing: 1rem; }
+        .word-extra   { word-spacing: 2rem; }
+
+        .letter-normal{ letter-spacing: normal; }
+        .letter-tight { letter-spacing: -0.05em; }
+        .letter-wide  { letter-spacing: 0.15em; }
+        .letter-wider { letter-spacing: 0.4em; }
+
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256">
+            <path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"/>
+        </svg>
+    </a>
+
+    <main>
+        <header class="mainmenu">
+            <h1>19 - Text</h1>
+            <ul>
+                <li>Align</li>
+                <li>Line Height</li>
+                <li>Decoration</li>
+                <li>Transform</li>
+                <li>Indent</li>
+                <li>Spacing</li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="box">
+                <h4>Align</h4>
+                <p><strong>left:</strong></p>
+                <p class="align-left">Este párrafo está alineado a la izquierda.</p>
+                <p><strong>center:</strong></p>
+                <p class="align-center">Este párrafo está centrado.</p>
+                <p><strong>right:</strong></p>
+                <p class="align-right">Este párrafo está alineado a la derecha.</p>
+                <p><strong>justify:</strong></p>
+                <p class="align-justify">Este párrafo está justificado, ocupando todo el ancho.</p>
+            </div>
+
+            <div class="box">
+                <h4>Line Height</h4>
+                <p class="lh-compact"><strong>1.2:</strong> Línea 1<br/>Línea 2<br/>Línea 3 </p>
+                <p class="lh-normal"><strong>1.5:</strong> Línea 1<br/>Línea 2<br/>Línea 3 </p>
+                <p class="lh-relaxed"><strong>2:</strong> Línea 1<br/>Línea 2<br/>Línea 3 </p>
+                <p class="lh-loose"><strong>2.8:</strong> Línea 1<br/>Línea 2<br/>Línea 3 </p>
+            </div>
+
+            <div class="box">
+                <h4>Decoration</h4>
+                <p class="dec-underline"><strong>underline:</strong> Texto subrayado.</p>
+                <p class="dec-overline"><strong>overline:</strong> Texto con línea superior.</p>
+                <p class="dec-line-through"><strong>line-through:</strong> Texto tachado.</p>
+                <p class="dec-underline-wavy"><strong>underline wavy:</strong> Subrayado ondulado.</p>
+                <p class="dec-overline-dashed"><strong>overline dashed:</strong> Línea discontinua.</p>
+            </div>
+
+            <div class="box">
+                <h4>Transform</h4>
+                <p class="trans-uppercase"><strong>uppercase:</strong> Este texto está en mayúsculas.</p>
+                <p class="trans-lowercase"><strong>lowercase:</strong> ESTE TEXTO ESTÁ EN MINÚSCULAS.</p>
+                <p class="trans-capitalize"><strong>capitalize:</strong> cada palabra comienza con mayúscula.</p>
+                <p class="trans-none"><strong>none:</strong> Texto sin transformar.</p>
+            </div>
+
+            <div class="box">
+                <h4>Indent</h4>
+                <p class="indent-small"><strong>1.5rem:</strong> Este párrafo tiene sangría pequeña en la primera línea. El resto del texto fluye normalmente.</p>
+                <p class="indent-medium"><strong>3rem:</strong> Este párrafo tiene sangría mediana. La primera línea está más desplazada.</p>
+                <p class="indent-large"><strong>6rem:</strong> Este párrafo tiene sangría grande. La primera línea está muy desplazada.</p>
+            </div>
+
+            <div class="box">
+                <h4>Spacing</h4>
+                <p><strong>word-spacing:</strong></p>
+                <p class="word-normal">normal: Esto es un texto normal.</p>
+                <p class="word-wide">0.5rem: Espacio amplio entre palabras.</p>
+                <p class="word-wider">1rem: Espacio aún más amplio.</p>
+                <p class="word-extra">2rem: Espacio muy grande.</p>
+                <p><strong>letter-spacing:</strong></p>
+                <p class="letter-normal">normal: Letras normales.</p>
+                <p class="letter-tight">-0.05em: Letras más juntas.</p>
+                <p class="letter-wide">0.15em: Letras separadas.</p>
+                <p class="letter-wider">0.4em: Letras muy separadas.</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 - Pseudoclasses</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        .box {
+            background-color: #1e1e1e;
+            border: 2px solid #fff9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .box h4 {
+            color: #fffc;
+            margin-top: 0;
+            border-bottom: 1px solid #fff3;
+            padding-bottom: 0.4rem;
+        }
+
+        .box code {
+            background-color: #333;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: #fffc;
+            font-size: 0.9rem;
+        }
+
+        .box p, .box li {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        .btn-hover {
+            display: inline-block;
+            background: #4caf50;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-hover:hover {
+            background: #2e7d32;
+        }
+
+        .btn-active {
+            display: inline-block;
+            background: #2196f3;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .btn-active:active {
+            background: #0b5e8a;
+            transform: scale(0.95);
+        }
+
+        /* 3. Focus */
+        .input-focus {
+            background: #333;
+            border: 2px solid #555;
+            color: #fff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            outline: none;
+        }
+        .input-focus:focus {
+            border-color: #4caf50;
+            box-shadow: 0 0 8px #4caf50;
+        }
+
+        /* 4. First-child / Last-child */
+        .lista-hijos li:first-child {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        .lista-hijos li:last-child {
+            color: #4dabf7;
+            font-weight: bold;
+        }
+
+        /* 5. Nth-child */
+        .lista-nth li:nth-child(odd) {
+            background: #2a2a2a;
+        }
+        .lista-nth li:nth-child(even) {
+            background: #1a1a1a;
+        }
+        .lista-nth li:nth-child(3n) {
+            border-left: 4px solid #fcc419;
+        }
+
+        /* 6. Not */
+        .lista-not li:not(.excluido) {
+            color: #51cf66;
+        }
+        .lista-not li.excluido {
+            color: #ff6b6b;
+            text-decoration: line-through;
+        }
+
+        /* 7. Checked (para checkbox) */
+        .checkbox-label {
+            color: #ddd;
+            cursor: pointer;
+        }
+        .checkbox-label input[type="checkbox"] {
+            accent-color: #4caf50;
+            transform: scale(1.2);
+            margin-right: 0.5rem;
+        }
+        .checkbox-label input[type="checkbox"]:checked + span {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        /* 8. Enlace: visited */
+        .link-ejemplo:link {
+            color: #4dabf7;
+        }
+        .link-ejemplo:visited {
+            color: #cc5de8;
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256">
+            <path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"/>
+        </svg>
+    </a>
+
+    <main>
+        <header class="mainmenu">
+            <h1>20 - Pseudoclasses</h1>
+            <ul>
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:focus</li>
+                <li>:first-child / :last-child</li>
+                <li>:nth-child</li>
+                <li>:not</li>
+                <li>:checked</li>
+                <li>:link / :visited</li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="box">
+                <h4>:hover</h4>
+                <p>Pasa el mouse sobre el botón para ver el efecto:</p>
+                <a href="#" class="btn-hover">Botón con hover</a>
+                <p style="color: #888; font-size:0.9rem; margin-top:0.5rem;"><code>background</code> cambia al pasar el ratón.</p>
+            </div>
+
+            <div class="box">
+                <h4>:active</h4>
+                <p>Haz clic y mantén presionado el botón:</p>
+                <a href="#" class="btn-active">Botón con active</a>
+                <p style="color: #888; font-size:0.9rem; margin-top:0.5rem;">Cambia el fondo y se reduce ligeramente.</p>
+            </div>
+
+            <div class="box">
+                <h4>:focus</h4>
+                <p>Haz clic en el input para enfocarlo:</p>
+                <input type="text" class="input-focus" placeholder="Escribe algo...">
+                <p style="color: #888; font-size:0.9rem; margin-top:0.5rem;">El borde se ilumina al enfocar.</p>
+            </div>
+
+            <div class="box">
+                <h4>:first-child / :last-child</h4>
+                <ul class="lista-hijos" style="list-style: none; padding-left: 0;">
+                    <li>Elemento 1 (primero, en rojo)</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4 (último, en azul)</li>
+                </ul>
+                <p style="color: #888; font-size:0.9rem;">El primer y último elemento tienen colores especiales.</p>
+            </div>
+
+            <div class="box">
+                <h4>:nth-child</h4>
+                <ul class="lista-nth" style="list-style: none; padding-left: 0;">
+                    <li>Elemento 1 (fondo alterno)</li>
+                    <li>Elemento 2 (fondo alterno)</li>
+                    <li>Elemento 3 (fondo alterno + borde amarillo)</li>
+                    <li>Elemento 4 (fondo alterno)</li>
+                    <li>Elemento 5 (fondo alterno)</li>
+                    <li>Elemento 6 (fondo alterno + borde amarillo)</li>
+                </ul>
+                <p style="color: #888; font-size:0.9rem;">Fondos alternos y cada 3 elementos tienen borde izquierdo amarillo.</p>
+            </div>
+
+            <div class="box">
+                <h4>:not</h4>
+                <ul class="lista-not" style="list-style: none; padding-left: 0;">
+                    <li>Elemento normal (verde)</li>
+                    <li class="excluido">Elemento excluido (rojo y tachado)</li>
+                    <li>Otro normal (verde)</li>
+                    <li class="excluido">Otro excluido (rojo y tachado)</li>
+                </ul>
+                <p style="color: #888; font-size:0.9rem;">Los elementos con clase <code>.excluido</code> se ven diferentes.</p>
+            </div>
+
+            <div class="box">
+                <h4>:checked</h4>
+                <p>Marca el checkbox para ver el cambio:</p>
+                <label class="checkbox-label">
+                    <input type="checkbox"> <span>Opción 1</span>
+                </label><br>
+                <label class="checkbox-label">
+                    <input type="checkbox"> <span>Opción 2</span>
+                </label>
+                <p style="color: #888; font-size:0.9rem; margin-top:0.5rem;">Al marcar, el texto se vuelve verde y en negrita.</p>
+            </div>
+
+            <div class="box">
+                <h4>:link / :visited</h4>
+                <p>Visita el enlace y luego vuelve para ver el cambio:</p>
+                <a href="#" class="link-ejemplo">Enlace de ejemplo</a>
+                <p style="color: #888; font-size:0.9rem; margin-top:0.5rem;">Color azul antes de visitar, morado después.</p>
+            </div>
+
+            <h4>:border|:after/h4>
+                <div class="heart"></div>
+        </section>
+    </main>
+</body>
+</html>
