@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22-Cursors</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            div {
+                background-color: #0003;
+                border: 2px solid #fff3;
+                margin: 1rem auto;
+                height: 140px;
+                width: 320px;
+                &.cursor-move {
+                    cursor: move;
+                }
+                &.cursor-help {
+                    cursor: help;
+                }
+                &.cursor-crosshair {
+                    cursor: crosshair;
+                }
+                &.cursor-image {
+                    cursor: url(../src/imgs/pointer.png), pointer;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>22-Cursors</h1>
+            <h4>Specifies the mouse cursor to be displayed when pointing over an element.</h4>
+        </header>
+        <section>
+            <h4>Move:</h4>
+            <div class="cursor-move"></div>
+            <h4>Help:</h4>
+            <div class="cursor-help"></div>
+            <h4>Crosshair:</h4>
+            <div class="cursor-crosshair"></div>
+            <h4>Image (Custom):</h4>
+            <div class="cursor-image"></div>
+        </section>
+    </main>
+</body>
+</html>
