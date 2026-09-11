@@ -7,7 +7,7 @@
     <style>
         body.reto {
             margin: 0;
-            background-color: #048315;
+            background-color: #17A053;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -22,9 +22,9 @@
         }
 
         header .logo {
-            width: 235px;
-            height: 209px;
-            background-position: -5px -5px;
+            width: 180px;
+            height: 180px;
+            background-position: -12px -400px;
             margin: 0 auto 2rem;
         }
 
@@ -35,16 +35,21 @@
             gap: 1rem;
         }
 
-        header nav p {
+        header nav a {
             display: block;
-            background-color: #107537;
+            background-color: #11542b;
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 0.9rem;
             padding: 1rem 2rem;
             border-bottom: 4px solid #fff;
+        }
+
+        header nav a:hover {
+            background-color: #091c10;
+            border-bottom-color: gold;
         }
 
         .portafolio {
@@ -53,21 +58,24 @@
             max-width: 1100px;
             margin: 2rem auto;
             padding: 1.3rem;
-            background-color: #09692e;
+            background-color: #11542b;
         }
 
         .portafolio .tarjeta {
             position: relative;
             flex: 1;
-            height: 222px;
+            height: 200px;
             border: 2px solid #fff;
             overflow: hidden;
+            cursor: pointer;
+
         }
 
         .portafolio .tarjeta .sprite {
-            width: 100%;
-            height: 100%;
-            background-position: -465px 0;
+            width: 400px;
+            height: 200px;
+            zoom: 1.1;
+            background-position: -471px -10px;
         }
 
         .portafolio .tarjeta h3 {
@@ -79,24 +87,24 @@
             padding: 1.6rem 0;
             text-align: center;
             color: #000;
-            background-color: rgba(255, 255, 255, 0.212);
+            background-color: rgba(255, 255, 255, 0.5);
         }
 
         .portafolio .tarjeta:hover h3 {
-            background-color: rgba(255, 255, 255, 0.856);
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
-        .sprites {
+        .contenido {
             display: flex;
             flex-direction: column;
             gap: 0.6rem;
             max-width: 1100px;
             margin: 2rem auto;
             padding: 0.6rem;
-            background-color: #09692e;
+            background-color: #11542b;
         }
 
-        .sprites .fila {
+        .contenido .fila {
             display: flex;
             align-items: center;
             gap: 2rem;
@@ -104,26 +112,27 @@
             background-color: #fff;
         }
 
-        .sprites .fila .icono {
+        .contenido .fila .icono {
             width: 86px;
             height: 95px;
             flex-shrink: 0;
             background-position: -299px -493px;
         }
 
-        .sprites .fila p {
+        .contenido .fila p {
             flex: 1;
             margin: 0;
             color: #333;
             line-height: 1.7;
             text-align: justify;
+            cursor: pointer;
         }
 
-        .sprites .fila:hover p {
+        .contenido .fila:hover p {
             color: #1e7d3c;
         }
 
-        .sprites .fila .lata {
+        .contenido .fila .lata {
             width: 90px;
             height: 157px;
             flex-shrink: 0;
@@ -138,7 +147,7 @@
             background-color: #fff;
         }
 
-        footer .img {
+        footer .familia {
             width: 335px;
             height: 182px;
             margin: 0 auto 1.5rem;
@@ -156,21 +165,25 @@
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
             border-bottom: 3px solid transparent;
         }
 
+        footer nav p {
+            border-bottom-color: #149548;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="reto">
     <header>
         <div class="logo sprite"></div>
         <nav>
-            <p>Inicio</p>
-            <p>Nosotros</p>
-            <p>Portafolio</p>
-            <p>Servicios</p>
-            <p>Contacto</p>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
         </nav>
     </header>
 
@@ -189,36 +202,36 @@
         </div>
     </section>
 
-    <section class="sprites">
+    <section class="contenido">
         <div class="fila">
             <div class="icono sprite"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, laboriosam cumque sit vero praesentium id tempore, quibusdam asperiores eius quaerat expedita repudiandae sequi deleniti labore quis animi. Reprehenderit, ut! Sit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit et maxime repellendus temporibus necessitatibus numquam modi delectus dolor. Ipsa ipsum magni accusamus vel maiores voluptatibus, praesentium dicta odio. Neque, quisquam!</p>
             <div class="lata sprite"></div>
         </div>
         <div class="fila">
             <div class="icono sprite"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eum earum! Quam, odio? Voluptate qui quam, iusto rerum eaque placeat quaerat molestiae veritatis alias dicta facere doloremque quia, quasi ipsam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus cum modi. Nobis sequi optio, id doloribus, quae reiciendis dolor tenetur incidunt nesciunt alias aut numquam quibusdam pariatur voluptatibus laborum?</p>
             <div class="lata sprite"></div>
         </div>
         <div class="fila">
             <div class="icono sprite"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa fuga sed velit in dicta. Dolores, ullam debitis illum ipsam minus, doloremque obcaecati adipisci, quia sunt maxime sequi? Aut, eaque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia assumenda dicta provident commodi totam est iure aut, quia nisi illum sint! Dignissimos nesciunt ducimus officiis, nam labore ratione suscipit asperiores!</p>
             <div class="lata sprite"></div>
         </div>
         <div class="fila">
             <div class="icono sprite"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus labore pariatur quos eos dicta excepturi perspiciatis eius incidunt debitis architecto id neque eum voluptatum, obcaecati quasi ut. Itaque, sunt? </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam eligendi suscipit asperiores aspernatur quas officia dolorum necessitatibus labore vel? Nihil repudiandae minus, dignissimos ratione autem accusantium ex tempora inventore!</p>
             <div class="lata sprite"></div>
         </div>
         <div class="fila">
             <div class="icono sprite"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea temporibus maxime placeat amet vitae voluptatum commodi pariatur animi, quos praesentium consequuntur error labore! Totam voluptatum natus expedita vero laborum voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut vitae nemo distinctio, fuga error laudantium quis numquam corporis architecto, facere expedita non. Est accusamus eveniet similique assumenda. Natus, autem!</p>
             <div class="lata sprite"></div>
         </div>
     </section>
 
     <footer>
-        <div class="img sprite"></div>
+        <div class="familia sprite"></div>
         <nav>
             <p>Inicio</p>
             <p>Nosotros</p>
