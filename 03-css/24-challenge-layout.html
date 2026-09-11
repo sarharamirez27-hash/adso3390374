@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24-Challenge Layout</title>
     <style>
-        body.reto {
+        body.fondo  {
             margin: 0;
             background-color: #17A053;
             font-family: Arial, Helvetica, sans-serif;
@@ -49,10 +49,10 @@
 
         header nav a:hover {
             background-color: #091c10;
-            border-bottom-color: gold;
+            border-bottom-color: rgba(255, 217, 0, 0.795);
         }
 
-        .portafolio {
+        .caja {
             display: flex;
             gap: 1.3rem;
             max-width: 1100px;
@@ -61,7 +61,7 @@
             background-color: #11542b;
         }
 
-        .portafolio .tarjeta {
+        .caja .tarjeta {
             position: relative;
             flex: 1;
             height: 200px;
@@ -71,14 +71,14 @@
 
         }
 
-        .portafolio .tarjeta .sprite {
+        .caja .tarjeta .sprite {
             width: 400px;
             height: 200px;
             zoom: 1.1;
             background-position: -471px -10px;
         }
 
-        .portafolio .tarjeta h3 {
+        .caja .tarjeta h3 {
             position: absolute;
             top: 0;
             left: 0;
@@ -90,7 +90,7 @@
             background-color: rgba(255, 255, 255, 0.5);
         }
 
-        .portafolio .tarjeta:hover h3 {
+        .caja .tarjeta:hover h3 {
             background-color: rgba(255, 255, 255, 0.8);
         }
 
@@ -100,29 +100,29 @@
             gap: 0.6rem;
             max-width: 1100px;
             margin: 2rem auto;
-            padding: 0.6rem;
             background-color: #11542b;
+            padding: 0.6rem;
         }
 
         .contenido .fila {
             display: flex;
+            background-color: #fff;
             align-items: center;
             gap: 2rem;
             padding: 1.5rem 2rem;
-            background-color: #fff;
         }
 
         .contenido .fila .icono {
-            width: 86px;
             height: 95px;
+            width: 86px;
             flex-shrink: 0;
             background-position: -299px -493px;
         }
 
         .contenido .fila p {
+            color: #333;
             flex: 1;
             margin: 0;
-            color: #333;
             line-height: 1.7;
             text-align: justify;
             cursor: pointer;
@@ -133,49 +133,49 @@
         }
 
         .contenido .fila .lata {
-            width: 90px;
             height: 157px;
+            width: 90px;
             flex-shrink: 0;
             background-position: -95px -213px;
         }
 
         footer {
-            max-width: 1100px;
             margin: 2rem auto;
+            max-width: 1100px;
             padding: 2rem;
             text-align: center;
             background-color: #fff;
         }
 
-        footer .familia {
-            width: 335px;
+        footer .sprite {
             height: 182px;
+            width: 335px;
             margin: 0 auto 1.5rem;
             background-position: -465px -418px;
         }
 
         footer nav {
             display: flex;
-            justify-content: space-between;
             padding-top: 1rem;
+            justify-content: space-between;
         }
 
         footer nav p {
             color: #333;
             text-decoration: none;
-            text-transform: uppercase;
             font-weight: bold;
+            text-transform: uppercase;
             padding-bottom: 0.5rem;
             border-bottom: 3px solid transparent;
         }
 
         footer nav p {
-            border-bottom-color: #149548;
             cursor: pointer;
+            border-bottom-color: #149548;
         }
     </style>
 </head>
-<body class="reto">
+<body class="fondo">
     <header>
         <div class="logo sprite"></div>
         <nav>
@@ -187,7 +187,7 @@
         </nav>
     </header>
 
-    <section class="portafolio">
+    <section class="caja">
         <div class="tarjeta">
             <h3>Sprite 01</h3>
             <div class="sprite"></div>
@@ -231,7 +231,7 @@
     </section>
 
     <footer>
-        <div class="familia sprite"></div>
+        <div class="dos sprite"></div>
         <nav>
             <p>Inicio</p>
             <p>Nosotros</p>
