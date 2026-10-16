@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29-new-backgrounds</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        div.multiples {
+            background: url(../src/imgs/bg3.png),
+                        url(../src/imgs/bg2.png),
+                        url(../src/imgs/bg1.png);
+            background-repeat: no-repeat;
+            height: 450px;
+        }
+        div {
+            outline: 4px solid #fff9;
+            height: 200px;
+            margin: 2rem auto;
+            width: 300px;
+
+            &.gradient1 {
+                background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 89, 255));
+            }
+            &.gradient2 {
+                background: linear-gradient(45deg , black, chocolate);
+            }
+            &.gradient3 {
+                background: linear-gradient(yellow 50% , blue 50%, blue 75%, red 75%);
+            }
+            &.gradient4 {
+                background: linear-gradient(to right, black 50%, white 50%);
+                background-size: 30px;
+            }
+            &.gradient5 {
+                background: radial-gradient(circle, limegreen, black);
+            }
+            &.gradient6 {
+                background: radial-gradient(circle, white 15%, black 15%, black 30%, white 30%, white 45%, black 45%, black 60%, white 60%, white 75%, black 75%, black 90%, white 90%);
+            }
+            &.gradient7 {
+                background: conic-gradient(red, green, blue);
+            }
+            &.mask {
+                mask-image: url(../src/imgs/mask.svg);
+                background: linear-gradient(to right, green, white, red);
+                mask-size: 100% 100%;
+                height: 120px;
+                width: 120px;
+            }
+        }
+        h5.clip {
+                font-size: 6rem;
+                text-align: center;
+                margin: 0;
+
+                &.clip1 {
+                    background: linear-gradient(to right, green, yellow);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent ;
+                }
+
+                &.clip2{
+                    background: url(../src/imgs/bgfire.jpg) no-repeat center;
+                    font-size: 8rem;
+                    text-transform: uppercase;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+    </style>   
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>29-new-bgs</h1>
+            <h4>New Features (multiple, gradients, clip).</h4>
+        </header>
+        <section>
+            <h4>Bgs Multiples:</h4>
+            <div class="multiples"></div>
+            <h4>Bgs Gradients:</h4>
+            <h5>linear-gradient(to direction, color1, color2)</h5>
+            <div class="gradient1"></div>
+            <h5>linear-gradient(degrees, color1, color2)</h5>
+            <div class="gradient2"></div>
+            <h5>Colombia Flag</h5>
+            <div class="gradient3"></div>
+            <h5>Vertical Lines</h5>
+            <div class="gradient4"></div>
+            <h5>radial-gradient(shape, color1, color2)</h5>
+            <div class="gradient5"></div>
+            <h5>BullsEye</h5>
+            <div class="gradient6"></div>
+            <h5>conic-gradient(color1, color2)</h5>
+            <div class="gradient7"></div>
+            <h4>Bgs Clip:</h4>
+            <h5 class="clip clip1">ADSO</h5>
+            <h5 class="clip clip2">fire</h5>
+            <h4>Bg Mask:</h4>
+            <div class="mask"></div>
+        </section>
+    </main>
+</body>
+</html>

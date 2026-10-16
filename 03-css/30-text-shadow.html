@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-text-shadow</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            p.txt {
+                font-size: 2rem;
+                margin-block: 4rem;
+                text-align: center;
+                &.txt1 {
+                    color: black;
+                    text-shadow: 0 0 12px #fff;
+                }
+                &.txt2 {
+                    color: #000;
+                    text-shadow: -4px -4px 10px #fff;
+                }
+                &.txt3 {
+                    color: #4d434377;
+                    font-size: 100px;
+                    text-shadow:    
+                    0 1px 0 #fff,
+                    0 2px 0 #fff,
+	                0 2px 0 #fff,
+	                0 3px 0 #fff,
+	                0 4px 0 #fff,
+	                0 5px 0 #fff,
+	                0 6px 0 #fff,
+	                0 7px 0 #fff,
+	                0 8px 0 #fff,
+	
+	                0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	                0 5px 10px rgba(0,0,0,.2),
+	                0 10px 10px rgba(0,0,0,.2),
+	                0 20px 20px rgba(0,0,0,.3);
+                }
+                &.txt4 {
+                    color: white;
+                    text-shadow: 0.075em 0.08em 0 rgb(7, 192, 216);
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>30-text-shadow</h1>
+            <h4>Adds shadows to text.</h4>
+        </header>
+        <section>
+            <p class="txt txt1">ADSO</p>
+            <p class="txt txt2">C.P.I.C</p>
+            <p class="txt txt3">SENA</p>
+            <p class="txt txt4">Caldas</p>
+        </section>
+    </main>
+</body>
+</html>
