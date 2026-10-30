@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37-animations</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section{
+            div.jungle{
+                background: url(../src/imgs/jungle.png)no-repeat center /contain;
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+                height: 390px;
+                width: 320px;
+                img{
+                    border-radius: 0;
+                    border: none;
+                    position: absolute;
+                }
+                
+                img.logo{
+                    position: absolute;
+                    transform: scale(.5);
+                    animation: 2.8s animLogo ease-in infinite;
+                    top: 20px;
+                }
+
+                img.dk{
+                    width: 140px;
+                    position: absolute;
+                    left: 90px;
+                    top: 140px;
+                    animation: 2s animdk ease infinite;
+                }
+
+                div.move{
+                    position: absolute;
+                    top: 240px;
+                    left: 0;
+                    animation: 4s animMove ease-out infinite;
+                    img.ryno{
+                        width: 140px;
+                        object-fit: contain;
+                        top: 0;
+                        animation: 0.2s animRyno linear infinite ;
+                    }
+                }
+            }
+        }
+        @keyframes animLogo{
+            0%, 100%{
+                transform: scale(.7);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        @keyframes animdk{
+            0% {transform: translateY(-80px) rotateX(0deg);}
+            50% {transform: translateY(-80px) rotateX(0deg);}
+            55% {transform: translateY(-80px) rotateX(180deg);}
+            65% {transform: translateY(-80px) rotateX(0deg);}
+            100% {transform: translateY(0px) rotateX(0deg);}
+        }
+        @keyframes animRyno{
+            0%, 100% {top: 0px;}
+            50% {top: 50px;}
+        }
+        @keyframes animMove {
+            0%{top: 200px; left: 0px; transform: rotateY(0deg); }
+            40%{top: 200px; left: 300px; transform: rotateY(0deg); }
+            50%{top: 200px; left: 300px; transform: rotateY(180deg); }
+            80%{top: 200px; left: 0px; transform: rotateY(180deg); }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>37-animations</h1>
+            <h4>Lorem</h4>
+        </header>
+        <section>
+            <div class="jungle">
+                <img src="../src/imgs/logo-dk.png" class="logo">
+                <img src="../src/imgs/dk.png" class="dk">
+                <div class="move">
+                    <img src="../src/imgs/ryno.png" class="ryno">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

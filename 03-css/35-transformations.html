@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35-transformations</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section{
+            img{
+                display: block;
+                margin: 1rem auto;
+
+                &.transform1{
+                    transform: rotate(90deg);
+                }
+                &.transform2{
+                    transform: scale(.5);
+                }
+                &.transform3{
+                    transform: translateX(-80px);
+                }
+                &.transform4{
+                    transform: skew(30deg);
+                }
+                &.transform5{
+                    transform: rotate(-45deg) scale(1.2);
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>35-transformations</h1>
+            <h4>Property lets you rotate, scale, skew, or translate an element.</h4>
+        </header>
+        <section>
+            <h4>Rotate: 90deg</h4>
+            <img class="transform1" src="../src/imgs/jake.png" width="180px">
+            <h4>Scale: 0.5</h4>
+            <img class="transform2" src="../src/imgs/jake.png" width="180px">
+            <h4>TranslateX: -100px</h4>
+            <img class="transform3" src="../src/imgs/jake.png" width="180px">
+            <h4>Skew: 30deg</h4>
+            <img class="transform4" src="../src/imgs/jake.png" width="180px">
+            <h4>Rotate Scale:</h4>
+            <img class="transform5" src="../src/imgs/jake.png" width="180px">
+        </section>
+    </main>
+</body>
+</html>

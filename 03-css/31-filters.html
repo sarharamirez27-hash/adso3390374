@@ -5,76 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>31-filters</title>
     <link rel="stylesheet" href="../src/css/master.css">
-    <style>
-        div {
-            outline: 4px solid rgba(8, 223, 151, 0.6);
-            height: 200px;
-            margin: 2rem auto;
-            width: 300px;
+<style>
+    section{
+        img.filter{
+        background: linear-gradient(45deg, #18a105, #01a2ff);
+        outline: 2px solid #fff;
+        border-radius: 14px;
+        corner-shape: squircle;
+        display: block;
+        margin: 1rem auto;
+        padding: 0.4rem;
+        transition: all 0.5s ease-in;
+        width: 280px;
 
-            &.filter1 {
-                background: url(../src/imgs/jake.png);
-                height: 405px;
-                margin: 1rem auto;
-                width: 300px;
-                filter: grayscale(1);
-            }
-
-            &.filter2 {
-                background: url(../src/imgs/jake.png);
-                height: 405px;
-                margin: 1rem auto;
-                width: 300px;
-                filter: invert();
-            }
-
-            &.filter3 {
-                background: url(../src/imgs/jake.png);
-                height: 405px;
-                margin: 1rem auto;
-                width: 300px;
-                filter: sepia();
-            }
-
-            &.filter4 {
-                background: url(../src/imgs/jake.png);
-                height: 405px;
-                margin: 1rem auto;
-                width: 300px;
-                filter: contrast(50%);
-            }
-
-            &.filter5 {
-                background: url(../src/imgs/jake.png);
-                height: 405px;
-                margin: 1rem auto;
-                width: 300px;
-                filter: blur(10px);
-            }
-
-
+        &.filter1{
+            filter: grayscale(1);
         }
-    </style>
+        &.filter2{
+            filter: blur(5px);
+        }
+        &.filter3{
+            filter: sepia(1);
+        }
+        &.filter4{
+            filter: Brightness(.4);
+        }
+        &.filter5{
+            filter: Invert(1);
+        }
+        &.filter6{
+            filter: drop-shadow(0 0 12px #fff);
+        }
+        &.filter7{
+            filter: hue-rotate(180deg);
+        }
+        
+        &:hover{
+            filter: none;
+        }
+        
+        }
+    }
+</style>
 </head>
+
 <body class="css">
     <a href="index.html" class="btn-home">
         <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
     <main>
         <header class="mainmenu">
-            <h1>31-filters</h1>
-            <h4>Property (filter) applying graphical transformations (e.g., blur(), grayscale(), contrast(), drop-shadow()) to elements before display.</h4>
+            <h1>filters</h1>
+            <h4>Defines visual effects (like blur and saturation).
+</h4>
         </header>
         <section>
-            <h4>Filter: grayscale</h4>
-            <div class="filter1"></div>
-            <h4>Filter: invert</h4>
-            <div class="filter2"></div>
-            <h4>Filter: sepia</h4>
-            <div class="filter3"></div>
-            <h4>Filter: contrast</h4>
-            <div class="filter4"></div>
-            <h4>Filter: blur</h4>
-            <div class="filter5"></div>
+            <h4>GrayScale</h4>
+            <img class="filter filter1" src="../src/imgs/jake.png" alt="jake">
+            <h4>Blur</h4>
+            <img class="filter filter2" src="../src/imgs/jake.png" alt="jake">
+            <h4>Sepia</h4>
+            <img class="filter filter3" src="../src/imgs/jake.png" alt="Jake">
+            <h4>Brightness</h4>
+            <img class="filter filter4" src="../src/imgs/jake.png" alt="Jake">
+            <h4>Invert</h4>
+            <img class="filter filter5" src="../src/imgs/jake.png" alt="Jake">
+            <h4>Drop Shadow</h4>
+            <img class="filter filter6" src="../src/imgs/jake.png" alt="Jake">
+            <h4>HUE Rotate</h4>
+            <img class="filter filter7" src="../src/imgs/jake.png" alt="Jake">
         </section>
     </main>
 </body>
