@@ -3,71 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>39-challenge-responsive</title>
+    <title>40-challenge-responsive</title>
     <style>
-        body.fondo{
-            background: url(../src/imgs/fondo-gumball.jpg);
-        }
-
-        img{
-            width: 200px;
-            height: 120px;
-        }
-        div.logo{
-            text-align: center;
-            
-        }
-
-        div.nicole{
-            background-color: #04536bad;
-            width: 150px;
-            height: 180px;
-            color: #fff;
-            text-align: center;
-            img.nicole2{
-                width: 150px;
-                height: 150px;
+        body.fondo {
+            background: url(../src/imgs/fondo-gumball.jpg) no-repeat center / cover;
+            background-attachment: fixed;
+            padding: 20px 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            div.logo {
+                text-align: center;
+                margin-bottom: 20px;
+                img {
+                    height: 120px;
+                    width: 200px;
+                    object-fit: contain;
+                }
+            }
+            menu {
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+                max-width: 1000px;
+                div.card {
+                    background: linear-gradient(#e0064785,#0570a1b7,#1fff0148,#eeff008a);
+                    color: #fff;
+                    height: 200px;
+                    width: 220px;
+                    margin: 8px;
+                    display: inline-block;
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                    h4 {
+                        background-color: #000a;
+                        width: 100%;
+                        margin: 0;
+                        padding: 8px 0;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
+            div.info {
+                background: linear-gradient(#00000000,#0570a125,#0570a150,#00a2ff80);
+                color: #fff;
+                margin: 20px auto;
+                overflow: hidden;
+                max-width: 900px;
+                img {
+                    height: 200px;
+                    width: 200px;
+                    float: left;
+                    margin-right: 16px;
+                    object-fit: contain;
+                }
+                h2 {
+                    margin: 16px 0 8px 0;
+                }
+                p {
+                    margin: 0 16px 16px 0;
+                    text-align: justify;
+                }
             }
         }
 
-        div.richard{
-            background-color: #04536bad;
-            width: 150px;
-            height: 200px;
-            color: #fff;
-            text-align: center;
-            img.richard2{
-                width: 150px;
-                height: 200px;
+        @media (max-width: 800px) {
+            body.fondo {
+                menu, div.info {
+                    max-width: 500px;
+                }
             }
         }
 
+        @media (max-width: 480px) {
+            body.fondo {
+                menu div.card {
+                    margin: 10px auto;
+                    display: block;
+                }
+                div.info {
+                    max-width: 250px;
+                    img {
+                        width: 100%;
+                        margin: 0;
+                        float: none;
+                    }
+                }
+            }
+        }
     </style>
 </head>
 <body class="fondo">
     <header>
-        <div class="logo ">
-            <img src="../src/imgs/log-gumball.png" alt="">
+        <div class="logo">
+            <img src="../src/imgs/log-gumball.png" alt="Gumball Logo">
         </div>
     </header>
 
     <section>
         <menu>
-            <div class="nicole">
-                <img class="nicole2" src="../src/imgs/nicole.png" alt="">
+            <div class="card gumball">
+                <img class="gumball2" src="../src/imgs/nicole.png">
                 <h4>Nicole</h4>
             </div>
-            <div class="richard">
-                <img class="richard2" src="../src/imgs/richard.png" alt="">
-                <h4>richard</h4>
-            </div>
-            <div class="darwin">
 
+            <div class="card darwin">
+                <img src="../src/imgs/richard.png">
+                <h4>Richard</h4>
             </div>
-            <div class="anais">
 
+            <div class="card anais">
+                <img src="../src/imgs/darwin.png">
+                <h4>Darwin</h4>
+            </div>
+
+            <div class="card penny">
+                <img src="../src/imgs/anais.png"">
+                <h4>Anais</h4>
             </div>
         </menu>
+
+        <div class="info gumball">
+            <img class="gumball2" src="../src/imgs/gumball.png">
+            <h2>GUMBALL</h2>
+            <p>Es el protagonista de El increíble mundo de Gumball, un gato azul de 12 años caracterizado por su personalidad hiperactiva, sarcástica y propensa a generar situaciones caóticas. A pesar de su inmadurez y de los desastrosos resultados de sus planes, posee un trasfondo noble que se manifiesta con especial fuerza en el ámbito sentimental. Gumball profesa un amor profundo e incondicional hacia Penny, un sentimiento genuino que mitiga su habitual egoísmo y lo impulsa a superar su cobardía, mostrando una lealtad absoluta y una disposición total a protegerla ante cualquier adversidad.</p>
+        </div>
+
+        <div class="info penny">
+            <img class="penny2" src="../src/imgs/penny.png">
+            <h2>PENNY</h2>
+            <p>Es un personaje clave de El increíble mundo de Gumball, caracterizada por su sensatez, empatía y su naturaleza como un hada cambiasformas emocional. Penny profesa un amor profundo y sincero hacia Gumball, aceptando incondicionalmente todas sus imperfecciones, torpezas y locuras. Su fuerte vínculo la impulsa a ser sumamente paciente y leal, convirtiéndose en el equilibrio perfecto para el caótico mundo de su pareja.</p>
+        </div>
     </section>
 </body>
 </html>
