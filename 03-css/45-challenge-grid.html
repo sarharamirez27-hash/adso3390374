@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-challenge-grid</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+    body { padding: 12px; }
+
+    section {
+        display: grid;
+        margin: 0 auto 24px;
+        gap: 8px;
+        max-width: 760px;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .foto1 { grid-area: foto1; }
+    .foto2 { grid-area: foto2; }
+    .foto3 { grid-area: foto3; }
+    .foto4 { grid-area: foto4; }
+    .foto5 { grid-area: foto5; }
+    .foto6 { grid-area: foto6; }
+    .foto7 { grid-area: foto7; }
+
+    &.uno {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 120px 260px;
+        grid-template-areas:
+        'foto1 foto2 foto3'
+        'foto4 foto2 foto5'
+        'foto6 foto6 foto7';
+    }
+
+    &.dos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 190px 190px 190px;
+        grid-template-areas:
+        'foto1 foto1 foto2 foto3'
+        'foto1 foto1 foto4 foto4'
+        'foto5 foto6 foto4 foto4';
+    }
+    }
+</style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>45-challenge-grid</h1>
+            <h4>Grid Areas: irregular gallery</h4>
+        </header>
+        <section class="uno">
+            <img class="foto1" src="../src/imgs/niños5.jpg">
+            <img class="foto2" src="../src/imgs/niños4.jpg">
+            <img class="foto3" src="../src/imgs/niños6.jpg">
+            <img class="foto4" src="../src/imgs/niños10.jpg">
+            <img class="foto5" src="../src/imgs/niños9.jpg" >
+            <img class="foto6" src="../src/imgs/niños2.jpg">
+            <img class="foto7" src="../src/imgs/niños13.png" >
+        </section>
+
+        <section class="dos">
+            <img class="foto1" src="../src/imgs/niños.jpg">
+            <img class="foto2" src="../src/imgs/niños8.png">
+            <img class="foto3" src="../src/imgs/niños7.png">
+            <img class="foto4" src="../src/imgs/niños3.jpg">
+            <img class="foto5" src="../src/imgs/niños11.jpg">
+            <img class="foto6" src="../src/imgs/niños14.jpg">
+        </section>
+    </main>
+</body>
+</html>

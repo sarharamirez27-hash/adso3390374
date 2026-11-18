@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42-parallax</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            div.parallax {
+                outline: 2px solid #fff;
+                border-radius: 12px;
+                corner-shape: squircle;
+                overflow: hidden;
+                position: relative;
+                height: 576px;
+
+                div.layer8, div.layer7, div.layer6, div.layer5, 
+                div.layer4, div.layer3, div.layer2, div.layer1 {
+                    position: absolute;
+                    height: 576px;
+                    top: 0;
+                    left: 0;
+                    width: 1024px;
+                }
+
+                div.layer8 { background: url(../src/imgs/parallax/layer_08.png) repeat-x;}
+
+                div.layer7 { 
+                    background: url(../src/imgs/parallax/layer_07.png) repeat-x;
+                    animation: 40s animlayer linear infinite;
+                }
+                div.layer6 { 
+                    background: url(../src/imgs/parallax/layer_06.png) repeat-x;
+                    animation: 35s animlayer linear infinite;
+                }
+                div.layer5 { 
+                    background: url(../src/imgs/parallax/layer_05.png) repeat-x;
+                    animation: 30s animlayer linear infinite;
+                }
+                div.layer4 { 
+                    background: url(../src/imgs/parallax/layer_04.png) repeat-x;
+                    animation: 25s animlayer linear infinite;
+                }
+                div.layer3 { 
+                    background: url(../src/imgs/parallax/layer_03.png) repeat-x;
+                    animation: 20s animlayer linear infinite;
+                }
+                div.layer2 { 
+                    background: url(../src/imgs/parallax/layer_02.png) repeat-x;
+                    animation: 10s animlayer linear infinite;
+                }
+                div.layer1 { 
+                    background: url(../src/imgs/parallax/layer_01.png) repeat-x;
+                    animation: 5s animlayer linear infinite;
+                }
+
+                div.runner{
+                    position: absolute;
+                    background: url(../src/imgs/parallax/running.gif)no-repeat center/cover;
+                    height: 200px;
+                    transform: scale(.6);
+                    bottom: 60px;
+                    left: 60px;
+                    width: 200px;
+                }
+            }
+        }
+        @media (min-width: 1024px){
+            body{
+                main{
+                    width: 1024px;
+                    section{
+                        div.parallax{
+                            div.runner{
+                                left: 380px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @keyframes animlayer {
+            100% { background-position-x: -1024px; }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#e8e8e8" viewBox="0 0 256 256"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>42-parallax</h1>
+            <h4>Move at a different speed the backgrounds.</h4>
+        </header>
+        <section>
+        <div class="parallax">
+            <div class="layer8"></div>
+            <div class="layer7"></div>
+            <div class="layer6"></div>
+            <div class="layer5"></div>
+            <div class="layer4"></div>
+            <div class="layer3"></div>
+            <div class="layer2"></div>
+            <div class="layer1"></div>
+            <div class="runner"></div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
