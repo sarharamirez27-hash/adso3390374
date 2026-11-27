@@ -24,12 +24,24 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
-            'remember_token' => Str::random(10),
+    $gender = fake()->randomElement(['Masculino', 'Femenino']);
+
+    $name = $gender == 'Masculino'
+        ? fake()->firstNameMale()
+        : fake()->firstNameFemale();
+
+    $lastname = fake()->lastName();
+
+    return [
+        'document' => fake()->unique()->numerify('75######'),
+        'fullname' => $name . ' ' . $lastname,
+        'gender' => $gender,
+        'birthdate' => fake()->dateTimeBetween('1984-01-01', '2006-12-31')->format('Y-m-d'),
+        'phone' => fake()->numerify('312#######'),
+        'email' => fake()->unique()->numerify(strtolower($name . '.' . $lastname) . '.####') . '@example.com',
+        'email_verified_at' => now(),
+        'password' => bcrypt('12345'),
+        'remember_token' => Str::random(10),
         ];
     }
 
